@@ -1,0 +1,118 @@
+.container-home{
+    background-color: var(--color-background-cero);
+}
+.home-grid{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-home{
+    width: 250px;
+    border-radius: 50%;
+}
+
+.container-intro{
+    width: 350px;
+    display: grid;
+    height: 250px;
+    margin: 0px 50px 0px 50px;
+}
+.container-intro h1{
+    font-size: 30px;
+}
+.container-intro hr{
+  height: 1px;
+} 
+.container-social-media{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 80px;
+    height: 50%;
+}
+.social-item{
+    height: 100%;
+   display: grid;
+}
+.social-item__li{
+    height: 30px;
+    width: 30px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 50%;
+}
+.social-item__li svg{
+    fill:var(--color-background-four);
+    height: 30px;
+    width: 30px;
+}
+.social-item__li svg:hover{
+    fill:var(--color-background-three);
+}
+
+.link-cv-download{
+    padding: 5px;
+    display: grid;
+    place-items: center;
+    border: 1px var(--color-background-four) solid;
+    color: var(--color-background-three);
+    text-decoration: none;
+}
+.link-cv-download:hover{
+    text-decoration: underline;
+    background-color: var(--color-background-four);
+    color: var(--color-background-three);
+}
+@media  screen and (min-width: 0px) and (max-width:660px ){
+    .home-grid{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        margin: auto;
+        top: 20%;
+    }
+    .img-home{
+        position: relative;
+      width: 160px;
+      top:20px
+    }
+    .container-intro{
+        width: 90%;
+        height: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .container-img-home{
+        height: 34%;
+        width: 100%;
+    }
+    .social-item{
+        display: flex;
+        list-style: none;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .container-social-media{
+        width: 100%;
+        height: 33%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+@media  screen and (min-width: 660px){
+    .container-social-media{
+        list-style: none;
+    }
+    .social-item{
+        list-style: none;
+    }
+    .social-item__li{
+       padding: 0px;
+    }
+}

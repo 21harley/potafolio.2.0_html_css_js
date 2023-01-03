@@ -1,0 +1,56 @@
+:root{
+    --color-background-cero:rgb(19, 11, 40);
+    --color-background-one:rgb(37, 23, 73);
+    --color-background-two:rgb(13, 3, 114);
+    --color-background-three:rgb(220, 219, 217);
+    --color-background-four:rgb(35, 5, 105);
+    --color-background-five:rgb(0, 0, 0);
+}
+*,
+*::after,
+*::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:inherit;
+}
+html{
+background-color: var(--color-background-three);
+scroll-behavior: smooth;
+overflow-y: scroll;
+}
+body{
+    width: 100%;
+    background-color: var(--color-background-four);
+    color:var(--color-background-three);
+}
+
+.container{
+   padding-top: 4rem;
+   width: 100%;
+   height: 100vh;
+   margin-left: auto;
+   margin-right: auto;
+   /*
+   width: 100%;
+   max-width: var(--container-width);
+   min-height: 100vh;
+   height: 100vh;
+   */
+   text-align: center;
+}
+
+@media  screen and (min-width: 0px) and (max-width:600px ){
+    .container{
+        padding-top: 60px;
+    }
+    .container:nth-child(1){
+        padding-top: 0px;
+    }
+}
+
+@media  screen and (min-width: 600px){
+    .container-home{
+        padding-top: 0px;
+    }
+    
+}

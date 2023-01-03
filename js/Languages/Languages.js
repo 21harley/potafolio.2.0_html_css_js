@@ -3,13 +3,16 @@ import languages from "./ListLangues.js";
 
 export function LanguagesChange(langV){
     const seletIdioma=document.querySelectorAll(".idioma");
-  
+    const menuMovil=document.querySelector(".nav-ul-movil");
      seletIdioma.forEach((el)=>{
         el.addEventListener("change",(e)=>{
             let lang=e.target.value;
             langV=lang;
             Languages(lang);
-            document.querySelector("#menu-Button").click();
+            if(menuMovil.classList.contains("active")){
+                document.querySelector("#menu-Button").click();
+            }
+            
             console.log(langV);
         })
      })

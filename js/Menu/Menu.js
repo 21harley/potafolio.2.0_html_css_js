@@ -1,3 +1,4 @@
+
 export default function menu(){
     const menu=document.querySelector("#menu-Button");
     const menuMovil=document.querySelector(".nav-ul-movil");
@@ -6,6 +7,11 @@ export default function menu(){
         console.log("Hola");
        e.preventDefault();
        menuMovil.classList.toggle("active");
+       if(menuMovil.classList.contains("active")){
+        menu.innerHTML="Cerrar";
+       }else{
+        menu.innerHTML="Menu";
+       }
     })
     menuMovil.addEventListener("click",(e)=>{
         //e.preventDefault()

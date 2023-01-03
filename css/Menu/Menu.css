@@ -1,0 +1,119 @@
+/*Menu destopk and mobil*/
+.header{
+    position: sticky;
+    z-index: 997;
+    top: 0;
+    width: 100%;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-background-five);
+}
+.nav-ul,
+.nav-ul-movil{
+    list-style: none;
+    padding: 0px;
+}
+.nav-ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.nav-ul__button .button-menu{
+    display: block;
+}
+
+.menu-movil{
+    display: none;
+    position: sticky;
+    z-index: 997;
+    top: 50px;
+}
+.nav-ul-movil{
+    position: absolute;
+    background-color: var(--color-background-five);
+    display: grid;
+    place-items: center;
+    transition: all 1s;
+    opacity: 0;
+    visibility:inherit;
+    width: 20%;
+    margin: 0px;
+    margin-left: 80%;
+    height: calc(100vh - 50px);
+}
+
+.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-ul__a{
+    text-decoration: none;
+    color: var(--color-background-three);
+    font-weight: 700;
+}
+.nav-ul__a:hover{
+    text-decoration: underline;
+}
+@media  screen and (min-width: 0px) and (max-width:600px ){
+    .nav-ul{
+        justify-content:space-between;
+    }
+    .nav-ul .button-movil-menu{
+        display: block;
+    }
+    .nav-ul .nav-ul__li{
+        display: none;
+    }
+    .nav-ul .nav-ul__Logo,
+    .nav-ul .button-movil-menu{
+       margin: 0rem 1rem 0rem 1rem;
+    }
+    .menu-movil{
+        display: block;
+    }
+    .nav-ul  .nav-ul__select{
+        display: none;
+    }
+    .nav-ul__button{
+        margin-right: 10%;
+    }
+    .nav-ul-movil{
+        width: 100%;
+        margin: 0px;
+        right: 0px;
+    }
+}
+
+@media  screen and (min-width: 600px){
+    .nav-ul{
+        justify-content:space-between;
+    }
+    .nav-ul .button-movil-menu{
+        display: block;
+    }
+
+    .nav-ul .nav-ul__Logo,
+    .nav-ul .button-movil-menu{
+       margin: 0rem 1rem 0rem 1rem;
+    }
+    .menu-movil{
+        display: block;
+        position: sticky;
+    }
+    .nav-ul-movil .nav-ul__li{
+       display: none;
+    }
+    .nav-ul{
+        justify-content:space-evenly;
+    }
+    .nav-ul-movil .nav-ul__select{
+        display: none;
+    }
+    
+}
+
