@@ -19,8 +19,8 @@
 .container-intro{
     width: 350px;
     display: grid;
-    height: 250px;
-    margin: 0px 50px 0px 50px;
+    height: 350px;
+    margin: 0px 100px 0px 50px;
 }
 .container-intro h1{
     font-size: 30px;
@@ -67,6 +67,23 @@
     background-color: var(--color-background-four);
     color: var(--color-background-three);
 }
+.cursor-class{
+    animation-name: cursor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    color:var(--color-background-four);
+}
+.position-img-home{
+    width: 250px;
+}
+@keyframes cursor{
+   0%{
+    color:var(--color-background-four);
+   }
+   100%{
+    color:var(--color-background-three);
+   }
+}
 @media  screen and (min-width: 0px) and (max-width:660px ){
     .home-grid{
         display: flex;
@@ -86,10 +103,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        height: 350px;
+        margin: 0px 50px 0px 50px;
     }
     .container-img-home{
         height: 34%;
         width: 100%;
+        display: grid;
+        place-items: center;
     }
     .social-item{
         display: flex;

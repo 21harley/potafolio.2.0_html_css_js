@@ -5,6 +5,14 @@
     --color-background-three:rgb(220, 219, 217);
     --color-background-four:rgb(35, 5, 105);
     --color-background-five:rgb(0, 0, 0);
+/*
+    --color-background-cero:rgb(216, 214, 220); 
+    --color-background-one:rgb(0, 0, 0);
+    --color-background-two:rgb(255, 255, 255);
+    --color-background-three:rgb(0, 39, 147);
+    --color-background-four:rgb(236, 236, 246);
+    --color-background-five:rgb(116, 116, 116);
+    */
 }
 *,
 *::after,
@@ -17,6 +25,7 @@ html{
 background-color: var(--color-background-three);
 scroll-behavior: smooth;
 overflow-y: scroll;
+transition: all 0.5s;
 }
 body{
     width: 100%;

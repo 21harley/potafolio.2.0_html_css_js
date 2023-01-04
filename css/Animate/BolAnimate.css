@@ -1,0 +1,152 @@
+/*
+    --color-background-cero:rgb(216, 214, 220); 
+    --color-background-one:rgb(0, 0, 0);
+    --color-background-two:rgb(255, 255, 255);
+    --color-background-three:rgb(0, 39, 147);
+    --color-background-four:rgb(236, 236, 246);
+    --color-background-five:rgb(116, 116, 116);
+    */
+.animate{
+    height: 200px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.boll,
+.boll1,
+.boll2{
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  background-color: var(--color-background-three);
+  border-radius: 50%;
+  animation-name: ball;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  z-index: 1;
+}
+.boll1{
+    height: 85px;
+    width: 85px;
+    animation-duration: 6s;
+    z-index: 2;
+}
+.boll2{
+    height: 80px;
+    width: 80px;
+    animation-duration: 7s;
+    z-index: 3;
+}
+.pos-icon-animate{
+    display: grid;
+    place-items: center;
+}
+
+.icon-center{
+    font-size: 40px;
+    color: var(--color-background-background-three);
+}
+@keyframes giro {
+    0%{
+       transform: rotate(0deg);
+       opacity: 1;
+    }
+    50%{
+        transform: rotate(180deg);
+        opacity: 0.5;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes ball {
+    0%{
+        background-color: var(--color-background-one);
+        transform:  scale(1.5);
+    }
+    25%{
+        background-color: var(--color-background-two);
+        transform:  scale(1.8);
+    }
+    50%{
+        background-color: var(--color-background-four);
+        transform:  scale(2);
+    }
+    75%{
+        background-color: var(--color-background-two);
+        transform:  scale(1.8);
+    }
+    100%{
+        background-color: var(--color-background-one);
+        transform:  scale(1.5);
+    }
+  }
+
+@media (width:767){
+    .principal{
+        height: 200%;
+    }
+}
+
+.cargar-animate{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.animate-load,.boll-load{
+    position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation-name: girar;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.boll-load{
+    width: 50px;
+    height: 50px;
+}
+.animate-load{
+    border:1px solid var(--color-background-two);
+    box-shadow: 0px 0px 150px var(--color-background-four),
+                0px 0px 110px var(--color-background-two);
+}
+@keyframes girar{
+    0%{
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    100%{ 
+        transform: rotate(-360deg);
+    }
+}
+.animate-load::after{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    background-color: var(--color-background-three);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.boll-load::after{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: -2.5px;
+    left: 55px;
+    background-color: var(--color-background-three);
+    border-radius: 50%;
+    z-index: 1;
+}
