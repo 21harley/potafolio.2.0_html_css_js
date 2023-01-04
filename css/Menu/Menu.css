@@ -24,6 +24,9 @@
 }
 .nav-ul__button .button-menu{
     display: block;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 .menu-movil{
@@ -43,7 +46,7 @@
     width: 20%;
     margin: 0px;
     margin-left: 80%;
-    height: calc(100vh - 50px);
+    height: calc(40vh - 50px);
 }
 
 .active{
