@@ -116,6 +116,7 @@
 
 @media  screen and (min-width: 0px) and (max-width:660px ){
     .containerTitleA{
-        left: 35px;
+        position: sticky;
+        left: 49%;
       }
 }

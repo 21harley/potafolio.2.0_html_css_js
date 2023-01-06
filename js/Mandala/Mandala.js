@@ -30,7 +30,7 @@ function genertionHTML(character,pos,ban,radio,inputs){
         const valueX=valoresX[i];
         const p=document.createElement('p');
         p.textContent=character[i];
-        p.style.transform='translate3d('+(valueX*(x))+'px, '+(valueY*(y))+'px ,'+0+'px) rotate('+(90*arg-grados*arg)+'deg)';
+        p.style.transform='translate3d('+(valueX*(x))+'px, '+(valueY*(y))+'px ,'+0+'px) rotate('+(90*arg-grados*arg)+'deg)' ;
         p.classList.add('colorItem'); 
         p.classList.add(`cInput${inputs}`);
         framen.appendChild(p);
@@ -43,9 +43,16 @@ function genertionHTML(character,pos,ban,radio,inputs){
       //para el titulo
   const A=document.querySelector(".containerTitleA");
   for(let i=0;i<4;i++){
-    const rep=genertionHTML('{{ {{ << {{ }} >> }} }}',i,false,150);
+    const rep=genertionHTML('{{ {{ << {{ }} >> }} }}',i,false,150,"header");
     A.append(rep.rep);
   }
+  /*
+  setInterval(()=>{
+    const pageWidth  = document.documentElement.scrollWidth;
+    const pageHeight = document.documentElement.scrollHeight;
+    console.log(pageWidth,pageHeight);
+  },100)
+  */
   /*
   const B=document.querySelector(".containerTitleB");
   for(let i=0;i<4;i++){
