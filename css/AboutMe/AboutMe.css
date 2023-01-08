@@ -6,7 +6,7 @@
     color: var(  --color-background-three);
     text-decoration: none;
     width: 40%;
-    margin: auto;
+    margin: 0px auto auto auto;
     padding: 20px;
 }
 .link-cv-download:hover{
@@ -15,12 +15,18 @@
     color: var(--color-background-four);
 }
 .container-about-me{
-    display: grid;
+   display: flex;
+   flex-direction: column;
+   background-color: var(--color-background-cero);
 }
-
+.container-img-about-me{
+    display: grid;
+    place-items: center;
+    height: 300px;
+}
 .img-about-me{
   position: relative;
-  width: 160px;
+  width: 230px;
   top:20px;
   border-radius: 50%;
 }
@@ -28,6 +34,7 @@
     padding: 10% / 0%;
    width: 60%;
    margin: auto;
+   font-size: 1.2rem;
 }
 @media  screen and (min-width: 0px) and (max-width:660px ){
 
@@ -37,6 +44,11 @@
         display: grid;
         place-items: center;
     }
-
+    .container-about-me__p{
+        padding: 0px;
+       width: 90%;
+       margin: auto;
+       font-size: 1rem;
+    }
 
 }

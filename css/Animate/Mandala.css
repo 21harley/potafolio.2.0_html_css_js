@@ -1,7 +1,6 @@
 
 .container1,
-.containerTitleA,
-.containerTitleB{
+.containerTitleA{
     width: 1px;
     height: 1px;
 }
@@ -12,8 +11,7 @@
     left: calc(60% - 300px);
     top: 50vh;
 }
-.containerTitleA,
-.containerTitleB{
+.containerTitleA{
     position: relative;
     display: grid;
     place-items: center;
@@ -27,7 +25,9 @@
     display: sticky;
 }
 .containerTitleA{
-  left: 125px;
+    width: 95%;
+    height: 700%;
+    position: relative;
 }
 .containerTitleB{
     right: 135px;
@@ -84,7 +84,7 @@
 }
 .giro{
     animation-name: giro;
-    animation-duration: 60s;
+    animation-duration: 200s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -105,7 +105,7 @@
 .colorItem{
   margin: 0;
   color: white;
-  opacity: 0.4; 
+  opacity: 0.1; 
   position: absolute;
   cursor: default;   
 }
@@ -116,7 +116,14 @@
 
 @media  screen and (min-width: 0px) and (max-width:660px ){
     .containerTitleA{
-        position: sticky;
-        left: 49%;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        margin: auto;
+        width: 0px;
+        height: 0px;
+        border-radius: 0px;
       }
 }

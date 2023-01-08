@@ -8,7 +8,8 @@ const english={
         "Contact",
         "Hi, nice to meet you :D, welcome to my Portfolio I hope you can get to know me better and see my projects.",
         "Close",
-        "Download CV"
+        "Download CV",
+        "I am a self-taught programmer, student of Computer Engineering of 7 semester besides being a full stack developer Vue-Laravel and React-Express. In my free time I teach programming classes in languages like c/c++ and java as well as designing user interfaces in figma."
     ]
    }
 const spanish={
@@ -21,7 +22,8 @@ const spanish={
         "Contacto",
         "Hola muncho gusto :D, se bienvenido a mi Portafolio espero puedas, conocerme mejor y ver mis proyectos.",
         "Cerrar",
-        "Descarga CV"
+        "Descarga CV",
+        "Soy un programador autodidacta, estudiante de Ing. Informática de 7 semestre además de ser un developer full stack Vue-Laravel y React-Express. En mis tiempos libres doy clase de programación en lenguajes como c/c++ y java además de diseñar interfaces de usuario en figma."
     ]
 }
 

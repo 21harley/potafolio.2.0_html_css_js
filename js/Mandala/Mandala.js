@@ -43,7 +43,15 @@ function genertionHTML(character,pos,ban,radio,inputs){
       //para el titulo
   const A=document.querySelector(".containerTitleA");
   for(let i=0;i<4;i++){
-    const rep=genertionHTML('{{ {{ << {{ }} >> }} }}',i,false,150,"header");
+    const rep=genertionHTML('{{ {{ << {{ }} >> }} }}',i,false,110,"header");
+    A.append(rep.rep);
+  }
+  for(let i=0;i<4;i++){
+    const rep=genertionHTML(' + + + + + + + + + + + + + + + ',i,false,150,"header");
+    A.append(rep.rep);
+  }
+  for(let i=0;i<4;i++){
+    const rep=genertionHTML('///////////////////////',i,false,190,"header");
     A.append(rep.rep);
   }
   /*
