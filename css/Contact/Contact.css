@@ -1,3 +1,133 @@
 .container-contact{
     background-color: var(--color-background-cero);
 }
+.container-contact__form{
+    max-width: 700px;
+    width: 100%;
+
+    height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.container-contacto__tel,
+.container-contacto__messages{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.container-contacto__tel{
+    justify-content: space-evenly;
+    height: 500px;
+    margin: auto;
+}
+.contact-form__option{
+    display: grid;
+}
+
+.container-contacto__tel svg{
+    width: 30px;
+    height: 30px;
+    fill: var(--color-background-five);
+    stroke: var(--color-background-five);
+}
+
+.container-contact__form a{
+    width: 100%;
+    height: 150px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+    text-decoration: none;
+    color: var(--color-background-five);
+    border:solid 3px var(--color-background-five);
+}
+
+.container-contact__form a{
+    color: var(--color-background-three);
+    border:solid 3px var(--color-background-three);
+}
+.container-contacto__tel svg{
+    stroke: var(--color-background-three);
+    fill:var(--color-background-three);
+}
+.contatct-form{
+    height: 350px;
+    width: 80%;
+    padding: 10px;
+    border: 3px solid var(--color-background-three);
+    display: grid;
+}
+
+.contact-form__nombre,
+.contact-form__email{
+display: flex;
+flex-direction: column;
+align-items: baseline;
+}
+.contact-form__nombre .input-text,
+.contact-form__email .input-text{
+  width: 100%;
+  height: 40%;
+  margin: auto;
+  background: none;
+  border: none;
+  border: solid 1px var(--color-background-three);
+}
+.contact-form__option textarea{
+    background: none;
+    border: none;
+    border: solid 1px var(--color-background-three);
+    height: 60%;
+    width: 100%;
+    resize: none;
+    scroll-behavior: auto;
+    color: var(--color-background-three);
+}
+.contact-form__subtmit{
+    background: none;
+    border: none;
+    border: solid 1px var(--color-background-three);
+    color: var(--color-background-three); 
+}
+.contact-form__subtmit:hover{
+    background-color: var(--color-background-three);
+    border: solid 1px var(--color-background-three);
+    color: var(--color-background-one); 
+    text-decoration: underline;
+    cursor: pointer;
+}
+.container-contacto__tel h3,
+.container-contacto__tel span{
+    color: var(--color-background-three);
+}
+
+@media  screen and (min-width: 0px) and (max-width:600px ){
+    .container-contacto__tel{
+      flex-direction: row;
+      height: 350px;
+    }
+    .container-contact__form{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .container-contact__form{
+        height: 90%;
+        width: 90%;
+    }
+    .contatct-form{
+     width: 95%;
+    }
+}
+
+@media  screen and (min-width: 600px){
+  
+    
+}
