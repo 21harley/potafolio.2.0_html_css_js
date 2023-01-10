@@ -43,13 +43,11 @@
     border-radius: 50%;
 }
 .social-item__li svg{
-    fill:var(--color-background-five);
+    fill:var(--color-background-three);
     height: 30px;
     width: 30px;
 }
-.social-item__li svg:hover{
-    fill:var(--color-background-three);
-}
+
 
 
 .cursor-class{

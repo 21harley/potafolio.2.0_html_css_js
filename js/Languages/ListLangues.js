@@ -4,7 +4,7 @@ const english={
         "up",
         "About me",
         "Briefcase",
-        "minigame",
+        "Minigame",
         "Contact",
         "Hi, nice to meet you :D, welcome to my Portfolio I hope you can get to know me better and see my projects.",
         "Close",

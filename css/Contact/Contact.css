@@ -56,7 +56,7 @@
     fill:var(--color-background-three);
 }
 .contatct-form{
-    height: 350px;
+    height: 420px;
     width: 80%;
     padding: 10px;
     border: 3px solid var(--color-background-three);
@@ -77,12 +77,14 @@ align-items: baseline;
   background: none;
   border: none;
   border: solid 1px var(--color-background-three);
+  color: var(--color-background-three);
+  padding-left: 5px;
 }
 .contact-form__option textarea{
     background: none;
     border: none;
     border: solid 1px var(--color-background-three);
-    height: 60%;
+    height: 120px;
     width: 100%;
     resize: none;
     scroll-behavior: auto;
@@ -93,6 +95,8 @@ align-items: baseline;
     border: none;
     border: solid 1px var(--color-background-three);
     color: var(--color-background-three); 
+    height: 60px;
+    margin-top: auto;
 }
 .contact-form__subtmit:hover{
     background-color: var(--color-background-three);
