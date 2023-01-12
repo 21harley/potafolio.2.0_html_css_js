@@ -36,7 +36,6 @@
   *::-webkit-scrollbar-thumb {
     background-color: var(--color-background-three);
     border-radius: 20px;
-    border: 3px solid var(--color-background-cero);
   }
 html{
 background-color: var(--color-background-three);
@@ -64,7 +63,7 @@ body{
    height: 100vh;
    */
    text-align: center;
-   border-bottom: var(--color-background-one) solid 2px;
+   border-bottom: var(--color-background-one) solid 1px;
 }
 
 

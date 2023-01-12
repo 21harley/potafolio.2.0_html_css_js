@@ -15,9 +15,11 @@
     color: var(--color-background-four);
 }
 .container-about-me{
+    position: relative;
    display: flex;
    flex-direction: column;
    background-color: var(--color-background-cero);
+   z-index: 2;
 }
 .container-img-about-me{
     display: grid;
@@ -33,7 +35,7 @@
 .container-about-me__p{
     padding: 10% / 0%;
    width: 60%;
-   margin: auto;
+   margin: 10px auto 20px auto;
    font-size: 1.2rem;
 }
 @media  screen and (min-width: 0px) and (max-width:660px ){

@@ -15,7 +15,7 @@
     justify-content: space-evenly;
 }
 .container-social-media-footer svg{
-  fill: white;
+  fill:var(--color-background-three);
 }
 @media  screen and (min-width: 660px){
     .container-social-media-footer{

@@ -1,7 +1,7 @@
 
  let colorName=["--color-background-cero","--color-background-one","--color-background-two","--color-background-three","--color-background-four","--color-background-five"];
  let colorVar=[["#130B28","#25174B","#0D0372","#DCDBD9","#230569","#000000"],
- ["#25174B","#130B28","#ECECF6","#FFFFFF","#0D0372","#000000"]];
+ ["#00000","#000000","#ECECF6","#000000","#FFFFFF","#FFFFFF"]];
 
 export default function Color(){
    const color=document.querySelector(".button-color");

@@ -56,6 +56,14 @@ function genertionHTML(character,pos,ban,radio,inputs){
   }
   /*
   setInterval(()=>{
+    const lista=document.querySelectorAll(".colorItem");
+    let aux=Math.floor(Math.random()*(lista.length-1));
+    if(!lista[aux].classList.contains("active-mand")){
+       lista[aux].classList.add("active-mand");
+    }
+  },10);*/
+  /*
+  setInterval(()=>{
     const pageWidth  = document.documentElement.scrollWidth;
     const pageHeight = document.documentElement.scrollHeight;
     console.log(pageWidth,pageHeight);

@@ -1,10 +1,11 @@
 .container-contact{
+    position: relative;
     background-color: var(--color-background-cero);
+    z-index: 2;
 }
 .container-contact__form{
     max-width: 700px;
     width: 100%;
-
     height: 500px;
     margin: auto;
     display: grid;
@@ -18,9 +19,9 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+  gap: 5px;
 }
 .container-contacto__tel{
-    justify-content: space-evenly;
     height: 500px;
     margin: auto;
 }
@@ -49,7 +50,7 @@
 
 .container-contact__form a{
     color: var(--color-background-three);
-    border:solid 3px var(--color-background-three);
+    border:solid 1px var(--color-background-three);
 }
 .container-contacto__tel svg{
     stroke: var(--color-background-three);
@@ -58,8 +59,7 @@
 .contatct-form{
     height: 420px;
     width: 80%;
-    padding: 10px;
-    border: 3px solid var(--color-background-three);
+    border: 1px solid var(--color-background-three);
     display: grid;
 }
 
@@ -71,37 +71,44 @@ align-items: baseline;
 }
 .contact-form__nombre .input-text,
 .contact-form__email .input-text{
-  width: 100%;
+  width: 90%;
   height: 40%;
   margin: auto;
   background: none;
   border: none;
   border: solid 1px var(--color-background-three);
   color: var(--color-background-three);
-  padding-left: 5px;
 }
 .contact-form__option textarea{
     background: none;
     border: none;
     border: solid 1px var(--color-background-three);
     height: 120px;
-    width: 100%;
+    width: 90%;
     resize: none;
     scroll-behavior: auto;
     color: var(--color-background-three);
+    margin: auto;
 }
+
+.contatct-form label{
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
 .contact-form__subtmit{
     background: none;
     border: none;
     border: solid 1px var(--color-background-three);
     color: var(--color-background-three); 
     height: 60px;
-    margin-top: auto;
+    margin: auto;
+    width: 90%;
 }
 .contact-form__subtmit:hover{
     background-color: var(--color-background-three);
     border: solid 1px var(--color-background-three);
-    color: var(--color-background-one); 
+    color: var(--color-background-two); 
     text-decoration: underline;
     cursor: pointer;
 }
@@ -114,20 +121,22 @@ align-items: baseline;
     .container-contacto__tel{
       flex-direction: row;
       height: 350px;
+      gap:2px;
     }
     .container-contact__form{
         display: flex;
         flex-direction: column-reverse;
         width: 90%;
-        margin-top: 20px;
+        margin-top: 10px;
         margin-bottom: 10px;
     }
     .container-contact__form{
-        height: 90%;
+        height: 95%;
         width: 90%;
+        gap: 1px;
     }
     .contatct-form{
-     width: 95%;
+     width: 100%;
     }
 }
 

@@ -104,14 +104,18 @@
 
 .colorItem{
   margin: 0;
-  color: white;
-  opacity: 0.1; 
+  color: var(--color-background-three);
+  opacity: 0.6; 
   position: absolute;
   cursor: default;   
 }
 
 .colorItem:hover{
   opacity: 1;
+}
+
+.active-mand{
+    opacity: 1;
 }
 
 @media  screen and (min-width: 0px) and (max-width:660px ){
@@ -125,5 +129,7 @@
         width: 0px;
         height: 0px;
         border-radius: 0px;
+        opacity: 0.3;
+        z-index: 1;
       }
 }
