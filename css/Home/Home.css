@@ -48,15 +48,40 @@
     width: 30px;
 }
 
-
-
 .cursor-class{
     animation-name: cursor;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     color:var(--color-background-four);
 }
+.scroll-home{
+    width: 100px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    transform: rotate(90deg);
+    position:absolute;
+    bottom: 30px;
+    left: 0px;
+    animation-name: inter;
+    animation-duration: 6s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+@keyframes inter{
+  0%{
 
+    transform: rotate(90deg) translateX(40px);
+  }
+  50%{
+    transform: rotate(90deg) translateX(-40px);
+  }
+  100%{
+    transform: rotate(90deg) translateX(40px);
+  }
+}
 @keyframes cursor{
    0%{
     color:var(--color-background-four);
@@ -95,6 +120,9 @@
         height: 33%;
         display: grid;
         grid-template-columns: 100%;
+    }
+    .scroll-home{
+        display: none;
     }
 }
 
