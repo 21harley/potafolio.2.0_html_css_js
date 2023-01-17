@@ -66,6 +66,38 @@ body{
    border-bottom: var(--color-background-one) solid 1px;
 }
 
+.InConstruction{
+ width: 100%;
+ height: 100%;
+ display: grid;
+ place-items: center;
+}
+.InContruction__icom{
+    display: grid;
+}
+.InContruction__table{
+    width: 200px;
+}
+.InContruction__tableBarOne,
+.InContruction__tableBarTwo,
+.InContruction__tableBarThree{
+    width: 200px;
+    height: 10px;
+    margin-top: 0px;
+    border: 1px solid var(--color-background-three);
+}
+
+.InContruction__tableBarTwo{
+    border: none;
+    border-left: 1px solid var(--color-background-three);
+    border-right: 1px solid var(--color-background-three);
+}
+.InContruction__triangle{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
 
 @media  screen and (min-width: 0px) and (max-width:600px ){
     .container{

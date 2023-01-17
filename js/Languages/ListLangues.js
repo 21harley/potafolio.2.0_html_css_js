@@ -40,7 +40,9 @@ const english={
         "php classes, database connection, pagination, mail, login, personal pad and MVC.",
 
         "Sokoban in c",
-        "Sokoban in c using structures, steps by references and files"
+        "Sokoban in c using structures, steps by references and files",
+
+        'In construction...'
 
     ]
    }
@@ -86,7 +88,11 @@ const spanish={
         "Clases de php, conexión a base de datos, paginación, correo, login, bloc personal y MVC.",
 
         "Sokoban en c",
-        "Sokoban en C utilizando estructuras, pasos por referencias y archivos."
+        "Sokoban en C utilizando estructuras, pasos por referencias y archivos.",
+        
+        /*otros*/
+
+        "En construcción...",
     ]
 }
 
