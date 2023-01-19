@@ -12,8 +12,10 @@ export function LanguagesChange(langV){
             if(menuMovil.classList.contains("active")){
                 document.querySelector("#menu-Button").click();
             }
-            const cv=document.querySelectorAll(".link-cv-download");
-           cv.href='assect/CV_John_Llanes_'+lang+".pdf";
+            const cv=document.querySelector(".link-cv-download");
+           //cv.href='assect/CV_John_Llanes_'+lang+".pdf";
+           cv.setAttribute('href','./assect/CV/CV_John_Llanes_'+lang+".pdf");
+           cv.setAttribute('download','./assect/CV/CV_John_Llanes_'+lang+".pdf");
             console.log(langV,cv);
         })
      })
