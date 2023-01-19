@@ -12,8 +12,9 @@ export function LanguagesChange(langV){
             if(menuMovil.classList.contains("active")){
                 document.querySelector("#menu-Button").click();
             }
-            
-            console.log(langV);
+            const cv=document.querySelectorAll(".link-cv-download");
+           cv.href='assect/CV_John_Llanes_'+lang+".pdf";
+            console.log(langV,cv);
         })
      })
  
