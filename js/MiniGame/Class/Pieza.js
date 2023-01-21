@@ -4,7 +4,7 @@ class Pieza{
     #color;
     #turnoJugador;
     
-    constructor(url="",color="",turnoJugador=-1){
+    constructor(url='',color='',turnoJugador=-1){
         this.#url=url;
         this.#color=color;
         this.#turnoJugador=turnoJugador;
@@ -29,11 +29,11 @@ class Pieza{
     }
 
    //get y set
-    set Url(url=""){
+    set Url(url=''){
         this.#url=url;
     }
     
-    set Color(color=""){
+    set Color(color=''){
         this.#color=color;
     }
 

@@ -1,4 +1,4 @@
-import Pieza from "./Pieza.js";
+import Pieza from './Pieza.js';
 
 class Jugador{
     //atributos
@@ -8,7 +8,7 @@ class Jugador{
     #colorPieza;
     #ficha;
 
-    constructor(nombre="",puntos=0,turno=0,colorPieza="",nameFicha=""){
+    constructor(nombre='',puntos=0,turno=0,colorPieza='',nameFicha=''){
         this.#nombre=nombre;
         this.#puntos=puntos;
         this.#turno=turno;
