@@ -13,7 +13,7 @@ export function LanguagesChange(langV){
                 document.querySelector("#menu-Button").click();
             }
             const cv=document.querySelector(".link-cv-download");
-           //cv.href='assect/CV_John_Llanes_'+lang+".pdf";
+
            cv.setAttribute('href','./assect/CV/CV_John_Llanes_'+lang+".pdf");
            cv.setAttribute('download','CV_John_Llanes_'+lang+".pdf");
             console.log(langV,cv);
