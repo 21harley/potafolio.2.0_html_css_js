@@ -54,3 +54,16 @@
     }
 
 }
+
+@media  screen and (min-width: 0px) and (max-width:600px ){
+
+}
+
+@media  screen and (min-width: 600px){
+    .link-cv-download{
+        margin-top: 100px;
+    }
+    .container-about-me__p{
+      max-width: 600px;
+    }
+}

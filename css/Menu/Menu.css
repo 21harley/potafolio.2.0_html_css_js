@@ -89,6 +89,14 @@
 .active-b-c{
     transform: translateX(40px);
 }
+.select_langaje{
+    box-sizing: border-box;
+    width: 100px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid var(--color-background-one);
+    border-radius: 2px;
+}
 @media  screen and (min-width: 0px) and (max-width:600px ){
     .nav-ul{
         justify-content:space-between;

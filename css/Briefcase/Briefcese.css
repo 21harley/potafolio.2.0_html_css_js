@@ -104,6 +104,12 @@
 }
 
 @media  screen and (min-width: 600px){
-
+    .container-contact{
+      display: grid;
+      grid-template-rows: 10% 90%;
+    }
+    .container-contact__form{
+        margin-top: 0px !important;
+    }
     
 }
