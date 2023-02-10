@@ -41,16 +41,12 @@ function relojMenssage(data){
 }
 
 export default function IntroMenssage(){
-    let data=[["F","u","l","l"," ","s","t","a","c","k"," ","D","e","v","e","l","p","e","r"],
-    ["F","r","o","n","t","e","n","d"," ","W","e","b"," ","D","e","v","e","l","o","p","e","r"]];
-
-    let tiem=data[0].length*70*2;
-    let total=data[0].length;
-    let iterador=0;
+    let data=[["F","u","l","l"," ","s","t","a","c","k"," ","D","e","v","e","l","o","p","e","r"],
+    ["F","r","o","n","t","e","n","d"," ","W","e","b"," ","D","e","v","e","l","o","p","e","r"],
+    ["B","a","c","k","e","n","d"," ","D","e","v","e","l","o","p","e","r"]];
+    let numero=Math.floor(Math.random() * 3)
+    let total=data[numero].length;
     let tecleado=setTimeout(()=>{
-        let numero=0;
-        if(iterador!=0) numero=Math.floor(Math.random() * 2);
         relojMenssage(data[numero]);
-        iterador++;
-    },0,total,data[0]);
+    },0,total,data[numero],numero);
 }
