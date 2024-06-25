@@ -1,44 +1,55 @@
-function genertionHTML(character,pos,ban,radio,inputs){
-    const auxArry=[[1,1],[-1,-1],[-1,1],[1,-1]];
-    const angulosA=[180,360,180,0];
-    const ar=[-1,-1,1,1];
-    const angulosB=[180,360,0,180];
-    let x=1*auxArry[pos][0];
-    let y=1*auxArry[pos][1];
-    let cuadrante=(ban)?angulosA[pos]:angulosB[pos];
-    let arg=ar[pos];
-  
-      let circle={
-        gra:90/character.length,
-        int:radio/character.length
-      }
-      let framen=document.createDocumentFragment();
-      let valoresX=[],valoresY=[];
-      for(let i=0,grados=circle.gra;i<character.length;i++,grados+=circle.gra){
-        const valueY=Math.abs(Math.cos(grados)*radio);
-        const valueX=Math.abs(Math.sin(grados)*radio);
-        valoresX.push(valueX);
-        valoresY.push(valueY);
-      }
-      valoresY=valoresY.sort((a,b)=>a - b)
-      valoresX=(valoresX.sort((a,b)=>a - b)).reverse();
-      for(let i=0,interval=circle.int,grados=cuadrante;
-              i<character.length;
-              i++,interval+=circle.int,grados+=circle.gra){
-              
-        const valueY=valoresY[i];
-        const valueX=valoresX[i];
-        const p=document.createElement('p');
-        p.textContent=character[i];
-        p.style.transform='translate3d('+(valueX*(x))+'px, '+(valueY*(y))+'px ,'+0+'px) rotate('+(90*arg-grados*arg)+'deg)' ;
-        p.classList.add('colorItem'); 
-        p.classList.add(`cInput${inputs}`);
-        framen.appendChild(p);
-      }  
-      return {type:true,rep:framen,tag:''}
+function generateHTML(character, pos, isAlternate, radius, inputClass) {
+  const directions = [[1, 1], [-1, -1], [-1, 1], [1, -1]];
+  const anglesA = [180, 360, 180, 0];
+  const anglesB = [180, 360, 0, 180];
+  const angleMultiplier = [-1, -1, 1, 1];
+
+  let x = directions[pos][0];
+  let y = directions[pos][1];
+  let startAngle = isAlternate ? anglesA[pos] : anglesB[pos];
+  let angleFactor = angleMultiplier[pos];
+
+  let circleProps = {
+      angleIncrement: 360 / character.length,
+      radiusIncrement: radius / character.length
+  };
+
+  let fragment = document.createDocumentFragment();
+
+  for (let i = 0, angle = startAngle; i < character.length; i++, angle += circleProps.angleIncrement) {
+      const radians = angle * (Math.PI / 180);
+      const valueX = radius * Math.cos(radians);
+      const valueY = radius * Math.sin(radians);
+
+      let p = document.createElement('p');
+      p.textContent = character[i];
+      p.style.transform = `translate3d(${valueX}px, ${valueY}px, 0px) rotate(${angle + 90}deg)`;
+      p.classList.add('colorItem', `cInput${inputClass}`);
+      fragment.appendChild(p);
   }
-  
-  
+
+  return { type: true, fragment: fragment, tag: '' };
+}
+
+export default function createMandala() {
+  const container = document.querySelector(".containerTitleA");
+
+  const patterns = [
+      '{{ {{ << {{ }} >> }} }} {{ {{ << {{ }} >> }} }}',
+      ' + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +',
+      '/////////////////////////////////////////////////////////////////////'
+  ];
+  const radii = [110, 150, 190];
+
+  patterns.forEach((pattern, index) => {
+      for (let i = 0; i < 4; i++) {
+          const result = generateHTML(pattern, i, false, radii[index], "header");
+          container.append(result.fragment);
+      }
+  });
+}
+
+/*
   export default function createMandala(){
       //para el titulo
   const A=document.querySelector(".containerTitleA");
@@ -75,5 +86,6 @@ function genertionHTML(character,pos,ban,radio,inputs){
     const rep=genertionHTML('¿? ¿?',i,true,170);
     B.append(rep.rep);
   }
-  */
+  
   }
+  */
