@@ -17,6 +17,12 @@
 .container-social-media-footer svg{
   fill:var(--color-background-three);
 }
+.container-social-media-footer .social-item__li a[style*="display:none"] {
+    display: none !important;
+}
+.container-social-media-footer .social-item__li:has(a[href*="dribbble"]) {
+    display: none !important;
+}
 @media  screen and (min-width: 660px){
     .container-social-media-footer{
         width: 100%;

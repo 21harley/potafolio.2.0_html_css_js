@@ -1,5 +1,5 @@
 
-let cadena=["bi bi-bootstrap","bi bi-braces","bi bi-code-slash","bi bi-dribbble","bi bi-stack","bi bi-git","bi bi-github","bi bi-gem"];
+let cadena=["bi bi-bootstrap","bi bi-braces","bi bi-code-slash","bi bi-stack","bi bi-git","bi bi-github","bi bi-gem"];
 
 function colorFecha(){
 

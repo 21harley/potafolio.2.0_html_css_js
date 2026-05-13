@@ -1,11 +1,12 @@
 :root{
-    --color-background-cero:rgb(19, 11, 40);
-    --color-background-one:rgb(37, 23, 73);
-    --color-background-two:rgb(13, 3, 114);
-    --color-background-three:rgb(220, 219, 217);
-    --color-background-four:rgb(35, 5, 105);
-    --color-background-five:rgb(0, 0, 0);
+    --color-background-cero:#0d1117;
+    --color-background-one:#161b22;
+    --color-background-two:#21262d;
+    --color-background-three:#f0f6fc;
+    --color-background-four:#8b949e;
+    --color-background-five:#30363d;
 /*
+ let colorVar=[["#130B28","#58585847","#51515136","#DCDBD9","#33333339","#000000"],
     --color-background-cero:rgb(216, 214, 220); 
     --color-background-one:rgb(0, 0, 0);
     --color-background-two:rgb(255, 255, 255);
