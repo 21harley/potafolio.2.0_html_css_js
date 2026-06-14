@@ -29,8 +29,6 @@
 .card-proyect__c-header,
 .card-proyect__c-body,
 .card-proyect__c-footer{
-    display: grid;
-    place-items: center;
     height: 100px;
 }
 .card-proyect__c-body{
@@ -51,7 +49,6 @@
 .button-filter{
     width: 100px;
     cursor: pointer;
-    border: none;
     background: none;
     border: 1px solid var(--color-background-three);
     color: var(--color-background-three);
@@ -65,15 +62,8 @@
     width: 100px;
     height: 50px;
     border: 1px solid var(--color-background-three);
-    display: grid;
-    place-items: center;
     color: var(--color-background-three);
     text-decoration: none;
-}
-.card-proyect__c-footer a:hover{
-    background-color: var(--color-background-three);
-    color: var(--color-background-two);
-    text-decoration: underline;
 }
 .inactive-proyect{
   display: none;

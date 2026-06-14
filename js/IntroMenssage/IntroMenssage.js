@@ -1,46 +1,8 @@
-function relojClearMessage(){
-    let item=document.querySelector("#title");
-    let currentText = item.innerHTML;
-    let total = currentText.length - 5; // Restar los 5 caracteres iniciales "Hola "
-    let cursor=5;
-    let iterador=0;
-    let tecleado2=setInterval(()=>{
-        let aux=item.innerHTML.split('');
+import { typewrite, typeClear } from '../utils/typewriter.js';
 
-        if(cursor ) {
-            aux[cursor]=' ';
-        }
- 
-        item.innerHTML=aux.join("");
- 
-        cursor+=1; iterador+=1;
- 
-        if(iterador>=total){
-         clearInterval(tecleado2);
-        };
-     },70);
-}
-
-function relojMenssage(data){
-    let iterador=0;
-    let cursor=5;
-    const total=data.length;
-    let tecleado=setInterval(()=>{
-       let item=document.querySelector("#title");
-       
-       let aux=item.innerHTML.split('');
-
-       aux[cursor]=data[iterador];
-
-       item.innerHTML=aux.join("");
-
-       cursor+=1; iterador+=1;
-
-       if(iterador==total){
-        clearInterval(tecleado);
-       };
-    },70,total);
-}
+const TYPING_INTERVAL = 70;
+const TITLE_SELECTOR = '#title';
+const CURSOR_START = 5;
 
 export default function IntroMenssage(){
     let data=[
@@ -54,21 +16,17 @@ export default function IntroMenssage(){
     function cycleWords() {
         let total = data[currentIndex].length;
         
-        // Primero borra la palabra actual
-        relojClearMessage();
+        typeClear(TITLE_SELECTOR, CURSOR_START, total, TYPING_INTERVAL);
         
-        // Luego escribe la nueva palabra después de un breve delay
         setTimeout(() => {
-            relojMenssage(data[currentIndex]);
+            typewrite(TITLE_SELECTOR, data[currentIndex], CURSOR_START, TYPING_INTERVAL);
             
-            // Prepara el siguiente ciclo
             setTimeout(() => {
                 currentIndex = (currentIndex + 1) % data.length;
                 cycleWords();
-            }, total * 70 + 1000); // Espera a que termine de escribir y un segundo extra
-        }, total * 70);
+            }, total * TYPING_INTERVAL + 1000);
+        }, total * TYPING_INTERVAL);
     }
     
-    // Inicia el ciclo
     cycleWords();
 }

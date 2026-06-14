@@ -6,15 +6,11 @@
 }
 .container1{
     position: relative;
-    display: grid;
-    place-items: center;
     left: calc(60% - 300px);
     top: 50vh;
 }
 .containerTitleA{
     position: relative;
-    display: grid;
-    place-items: center;
     right: 1px;
     top: -2px;
     width: 1px;

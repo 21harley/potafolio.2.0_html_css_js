@@ -1,3 +1,5 @@
+import { $ } from '../utils/dom.js';
+
 function generateHTML(character, pos, isAlternate, radius, inputClass) {
   const directions = [[1, 1], [-1, -1], [-1, 1], [1, -1]];
   const anglesA = [180, 360, 180, 0];
@@ -32,7 +34,7 @@ function generateHTML(character, pos, isAlternate, radius, inputClass) {
 }
 
 export default function createMandala() {
-  const container = document.querySelector(".containerTitleA");
+  const container = $(".containerTitleA");
 
   const patterns = [
       '{{ {{ << {{ }} >> }} }} {{ {{ << {{ }} >> }} }}',
@@ -48,44 +50,3 @@ export default function createMandala() {
       }
   });
 }
-
-/*
-  export default function createMandala(){
-      //para el titulo
-  const A=document.querySelector(".containerTitleA");
-  for(let i=0;i<4;i++){
-    const rep=genertionHTML('{{ {{ << {{ }} >> }} }}',i,false,110,"header");
-    A.append(rep.rep);
-  }
-  for(let i=0;i<4;i++){
-    const rep=genertionHTML(' + + + + + + + + + + + + + + + ',i,false,150,"header");
-    A.append(rep.rep);
-  }
-  for(let i=0;i<4;i++){
-    const rep=genertionHTML('///////////////////////',i,false,190,"header");
-    A.append(rep.rep);
-  }
-  /*
-  setInterval(()=>{
-    const lista=document.querySelectorAll(".colorItem");
-    let aux=Math.floor(Math.random()*(lista.length-1));
-    if(!lista[aux].classList.contains("active-mand")){
-       lista[aux].classList.add("active-mand");
-    }
-  },10);*/
-  /*
-  setInterval(()=>{
-    const pageWidth  = document.documentElement.scrollWidth;
-    const pageHeight = document.documentElement.scrollHeight;
-    console.log(pageWidth,pageHeight);
-  },100)
-  */
-  /*
-  const B=document.querySelector(".containerTitleB");
-  for(let i=0;i<4;i++){
-    const rep=genertionHTML('¿? ¿?',i,true,170);
-    B.append(rep.rep);
-  }
-  
-  }
-  */

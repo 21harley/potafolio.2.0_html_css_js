@@ -32,8 +32,8 @@
 .container-contacto__tel svg{
     width: 30px;
     height: 30px;
-    fill: var(--color-background-five);
-    stroke: var(--color-background-five);
+    fill: var(--color-background-three);
+    stroke: var(--color-background-three);
 }
 
 .container-contact__form a{
@@ -44,23 +44,13 @@
      justify-content: space-around;
      align-items: center;
     text-decoration: none;
-    color: var(--color-background-five);
-    border:solid 3px var(--color-background-five);
-}
-
-.container-contact__form a{
     color: var(--color-background-three);
     border:solid 1px var(--color-background-three);
-}
-.container-contacto__tel svg{
-    stroke: var(--color-background-three);
-    fill:var(--color-background-three);
 }
 .contatct-form{
     height: 420px;
     width: 80%;
     border: 1px solid var(--color-background-three);
-    display: grid;
 }
 
 .contact-form__nombre,
@@ -75,13 +65,11 @@ align-items: baseline;
   height: 40%;
   margin: auto;
   background: none;
-  border: none;
   border: solid 1px var(--color-background-three);
   color: var(--color-background-three);
 }
 .contact-form__option textarea{
     background: none;
-    border: none;
     border: solid 1px var(--color-background-three);
     height: 120px;
     width: 90%;
@@ -98,19 +86,11 @@ align-items: baseline;
 
 .contact-form__subtmit{
     background: none;
-    border: none;
     border: solid 1px var(--color-background-three);
     color: var(--color-background-three); 
     height: 60px;
     margin: auto;
     width: 90%;
-}
-.contact-form__subtmit:hover{
-    background-color: var(--color-background-three);
-    border: solid 1px var(--color-background-three);
-    color: var(--color-background-two); 
-    text-decoration: underline;
-    cursor: pointer;
 }
 .container-contacto__tel h3,
 .container-contacto__tel span{
@@ -138,9 +118,4 @@ align-items: baseline;
     .contatct-form{
      width: 100%;
     }
-}
-
-@media  screen and (min-width: 600px){
-  
-    
 }

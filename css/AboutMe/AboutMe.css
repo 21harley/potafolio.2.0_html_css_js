@@ -1,18 +1,10 @@
 .link-cv-download{
-    padding: 5px;
-    display: grid;
-    place-items: center;
+    padding: 20px;
     border: 1px var(--color-background-three) solid;
     color: var(  --color-background-three);
     text-decoration: none;
     width: 40%;
     margin: 0px auto auto auto;
-    padding: 20px;
-}
-.link-cv-download:hover{
-    text-decoration: underline;
-    background-color: var(--color-background-three);
-    color: var(--color-background-four);
 }
 .container-about-me{
     position: relative;
@@ -22,8 +14,6 @@
    z-index: 2;
 }
 .container-img-about-me{
-    display: grid;
-    place-items: center;
     height: 300px;
 }
 .img-about-me{
@@ -43,8 +33,6 @@
     .container-img-about-me{
         height: 34%;
         width: 100%;
-        display: grid;
-        place-items: center;
     }
     .container-about-me__p{
         padding: 0px;
@@ -52,10 +40,6 @@
        margin: auto;
        font-size: 1rem;
     }
-
-}
-
-@media  screen and (min-width: 0px) and (max-width:600px ){
 
 }
 

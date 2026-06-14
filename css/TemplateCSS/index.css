@@ -71,11 +71,8 @@ body{
 .InConstruction{
  width: 100%;
  height: 100%;
- display: grid;
- place-items: center;
 }
 .InContruction__icom{
-    display: grid;
 }
 .InContruction__table{
     width: 200px;
@@ -115,4 +112,23 @@ body{
         padding-top: 0px;
     }
     
+}
+
+/* Shared utility classes */
+.grid-center{
+    display: grid;
+    place-items: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.hover-interactive{
+    transition: background-color 0.3s, color 0.3s;
+}
+.hover-interactive:hover{
+    background-color: var(--color-background-three);
+    color: var(--color-background-two);
+    text-decoration: underline;
+    cursor: pointer;
 }

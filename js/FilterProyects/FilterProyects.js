@@ -1,14 +1,15 @@
+import { $, $$ } from '../utils/dom.js';
+
 export function FilterProyects(){
-    const list=document.querySelectorAll(".button-filter");
+    const list=$$(".button-filter");
     list.forEach((el)=>{
       el.addEventListener("click",(e)=>{
         e.preventDefault();
-        const list1=document.querySelector(".active-button-filter");
+        const list1=$(".active-button-filter");
         list1.classList.remove("active-button-filter");
         e.target.classList.add("active-button-filter");
-        const list2=document.querySelectorAll(".card-proyect");
+        const list2=$$(".card-proyect");
         const ban=e.target.getAttribute("filter");
-        //console.log(ban);
         list2.forEach((el)=>{
            if(ban=="All-items"){
              if(el.classList.contains('inactive-proyect')) el.classList.remove("inactive-proyect");

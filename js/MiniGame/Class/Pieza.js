@@ -1,3 +1,5 @@
+import { setCSSVar } from '../../utils/dom.js';
+
 class Pieza{
     //atributos
     #url;
@@ -8,7 +10,7 @@ class Pieza{
         this.#url=url;
         this.#color=color;
         this.#turnoJugador=turnoJugador;
-        document.documentElement.style.setProperty(`--color-jugador${this.#turnoJugador}`,this.#color);
+        setCSSVar(`--color-jugador${this.#turnoJugador}`,this.#color);
     }
 
     //metodos

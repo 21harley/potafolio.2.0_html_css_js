@@ -63,8 +63,6 @@
 .scroll-home{
     width: 100px;
     height: 30px;
-    display: grid;
-    place-items: center;
     transform: rotate(90deg);
     position:absolute;
     bottom: 30px;

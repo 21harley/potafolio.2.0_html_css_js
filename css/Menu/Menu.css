@@ -39,8 +39,6 @@
 .nav-ul-movil{
     position: absolute;
     background-color: var(--color-background-five);
-    display: grid;
-    place-items: center;
     transition: all 1s;
     opacity: 0;
     visibility:hidden;
@@ -68,8 +66,6 @@
 
 .nav-ul__color{
     width: 100%;
-    display: grid;
-    place-items: center;
 }
 .container-button-color{
     width: 70px;

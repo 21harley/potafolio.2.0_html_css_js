@@ -9,8 +9,6 @@
 .animate{
     height: 200px;
     width: 100%;
-    display: grid;
-    place-items: center;
 }
 .boll,
 .boll1,
@@ -40,8 +38,6 @@
     z-index: 3;
 }
 .pos-icon-animate{
-    display: grid;
-    place-items: center;
 }
 
 .icon-center{
@@ -93,8 +89,6 @@
 }
 
 .cargar-animate{
-    display: grid;
-    place-items: center;
     width: 100%;
     height: 200px;
 }
