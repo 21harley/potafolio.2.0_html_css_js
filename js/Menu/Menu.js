@@ -4,7 +4,6 @@ export default function menu(){
     const menuMovil=document.querySelector(".nav-ul-movil");
     
     menu.addEventListener("click",(e)=>{
-        console.log("Hola");
        e.preventDefault();
        menuMovil.classList.toggle("active");
        if(menuMovil.classList.contains("active")){

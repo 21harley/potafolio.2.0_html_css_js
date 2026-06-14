@@ -1,6 +1,26 @@
 
 let cadena=["bi bi-bootstrap","bi bi-braces","bi bi-code-slash","bi bi-stack","bi bi-git","bi bi-github","bi bi-gem"];
 
+function escapeHTML(str) {
+  if (!str) return '';
+  return str.replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#039;');
+}
+
+function sanitizeURL(url) {
+  if (!url) return '';
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol === 'https:' || parsed.protocol === 'http:') {
+      return parsed.href;
+    }
+  } catch (e) {}
+  return '';
+}
+
 function colorFecha(){
 
   let colorName=["--color-one","--color-two","--color-three","--color-four"];
@@ -101,11 +121,11 @@ fetch("https://api.github.com/users/21harley/repos?page=1&per_page=100")
       }
       let aux1=new Date(data[i]["created_at"]);
       cadena+=`</div>`;
-      cadena+=`<h6>${lista.join(" ")}  ${aux1.getDate()}/${aux1.getMonth()+1}/${aux1.getFullYear()}</h6>`;
-      cadena+=`<p class="textC ">${data[i]["description"]}</p>`;
-      cadena+=`<div class="flex" ><a target="_blank" href="${data[i]["html_url"]}"><button type="button" class="btn boton_pre">Ver codigo.</button></a>`;
+      cadena+=`<h6>${escapeHTML(lista.join(" "))}  ${aux1.getDate()}/${aux1.getMonth()+1}/${aux1.getFullYear()}</h6>`;
+      cadena+=`<p class="textC ">${escapeHTML(data[i]["description"])}</p>`;
+      cadena+=`<div class="flex" ><a target="_blank" rel="noopener noreferrer" href="${sanitizeURL(data[i]["html_url"])}"><button type="button" class="btn boton_pre">Ver codigo.</button></a>`;
       if(data[i]['homepage']){
-        cadena+=`<a target="_blank" href="${data[i]['homepage']}"><button type="button" class="btn boton_pre">Ver paguina.</button></a>`;
+        cadena+=`<a target="_blank" rel="noopener noreferrer" href="${sanitizeURL(data[i]['homepage'])}"><button type="button" class="btn boton_pre">Ver paguina.</button></a>`;
       }
       cadena+=`</div>`
       cadena+=`</div"></div></div>`;
