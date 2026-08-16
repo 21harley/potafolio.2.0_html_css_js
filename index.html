@@ -33,6 +33,13 @@
                         <option class="lang-sel" value="spanish">spanish</option>
                     </select>
                 </li>
+                <li class="nav-ul__color desktop-color-toggle">
+                    <div class="container-button-color">
+                        <button class="button-color">
+                            <svg fill="#000000" viewBox="-1 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"><path d="M16.417 9.579A7.917 7.917 0 1 1 8.5 1.662a7.917 7.917 0 0 1 7.917 7.917zm-12.94.396H4.58a.396.396 0 0 0 0-.792H3.477a.396.396 0 0 0 0 .792zm1.19-3.667.781.781a.396.396 0 0 0 .56-.56l-.78-.78a.396.396 0 0 0-.56.56zm1.341 5.76a.396.396 0 0 0-.56 0l-.78.781a.396.396 0 1 0 .56.56l.78-.78a.396.396 0 0 0 0-.56zm5.59-2.489a3.096 3.096 0 1 0-3.095 3.096 3.096 3.096 0 0 0 3.096-3.096zM8.103 5.662a.396.396 0 0 0 .792 0V4.558a.396.396 0 0 0-.792 0zm.792 7.834a.396.396 0 0 0-.792 0V14.6a.396.396 0 1 0 .792 0zm2.094-6.407a.396.396 0 0 0 .56 0l.78-.78a.396.396 0 0 0-.56-.56l-.78.78a.395.395 0 0 0 0 .56zm1.34 5.76-.78-.78a.396.396 0 0 0-.56.56l.78.78a.396.396 0 0 0 .56-.56zm1.587-3.27a.396.396 0 0 0-.396-.396h-1.104a.396.396 0 1 0 0 .792h1.104a.396.396 0 0 0 .396-.396z"></path></g></svg>
+                        </button>
+                    </div>
+                </li>
                 <li class="nav-ul__button">
                    <button class="button-menu" id="menu-Button">
                       <svg viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"><path d="M6 8H18" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M6 12H18" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M6 16H18" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></g></svg>
@@ -391,7 +398,6 @@
                 function handleCellPlayed(clickedCell, clickedCellIndex) {
                     board[clickedCellIndex] = currentPlayer;
                     clickedCell.innerText = currentPlayer;
-                    clickedCell.style.color = currentPlayer === 'X' ? '#f39c12' : '#3498db';
                 }
 
                 function handlePlayerChange() {
@@ -446,7 +452,7 @@
                     tttStatus.innerText = `Turno del jugador ${currentPlayer}`;
                     document.querySelectorAll('.ttt-cell').forEach(cell => {
                         cell.innerText = '';
-                        cell.style.color = 'var(--color-background-cero)';
+                        cell.style.color = 'var(--color-background-three)';
                     });
                 }
 
@@ -463,7 +469,7 @@
                     cell.style.fontSize = '3rem';
                     cell.style.fontWeight = 'bold';
                     cell.style.cursor = 'pointer';
-                    cell.style.color = 'var(--color-background-cero)';
+                    cell.style.color = 'var(--color-background-three)';
                     cell.addEventListener('click', handleCellClick);
                     tttBoard.appendChild(cell);
                 }
@@ -538,7 +544,7 @@
                 </ul>
               </div>
               <span>john.llanes.1996@gmail.com</span>
-              <span>&copy;-2024-john.llanes</span>
+              <span>&copy;-2026-john.llanes</span>
         </div>
     </footer>
     <script src="js/index.js" type="module"></script>

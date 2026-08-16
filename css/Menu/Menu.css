@@ -100,7 +100,6 @@
 }
 
 .nav-ul__color{
-    width: 100%;
     display: grid;
     place-items: center;
 }
@@ -151,6 +150,9 @@
     .nav-ul .button-movil-menu{
         display: block;
     }
+    .desktop-color-toggle {
+        display: none !important;
+    }
     .nav-ul .nav-ul__li{
         display: none;
     }
@@ -177,29 +179,13 @@
 
 @media  screen and (min-width: 600px){
     .nav-ul{
-        justify-content:space-between;
-    }
-    .nav-ul .button-movil-menu{
-        display: block;
-    }
-
-    .nav-ul .nav-ul__Logo,
-    .nav-ul .button-movil-menu{
-       margin: 0rem 1rem 0rem 1rem;
-    }
-    .menu-movil{
-        display: block;
-        position: sticky;
-    }
-    .nav-ul-movil .nav-ul__li{
-       display: none;
-    }
-    .nav-ul{
         justify-content:space-evenly;
     }
-    .nav-ul-movil .nav-ul__select{
-        display: none;
+    .nav-ul__button {
+        display: none !important;
     }
-    
+    .menu-movil{
+        display: none !important;
+    }
 }
 
