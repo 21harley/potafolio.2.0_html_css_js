@@ -2,6 +2,9 @@
     background-color: var(--color-background-cero);
     position: relative;
     overflow: hidden;
+    height: 100vh;
+    min-height: 700px;
+    max-height: 700px;
 }
 .home-grid{
     width: 100%;
@@ -19,6 +22,7 @@
     height: 350px;
     margin: 0px 50px 0px 50px;
     opacity: 0;
+    position: relative;
     transform: translateY(20px);
     animation: fadeInUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
 }
@@ -86,8 +90,8 @@
     place-items: center;
     transform: rotate(90deg);
     position:absolute;
-    bottom: 30px;
-    left: 0px;
+    bottom: 70px;
+    left: max(0px, calc(50% - 600px));
     animation-name: inter;
     animation-duration: 6s;
     animation-timing-function:linear;
@@ -97,14 +101,13 @@
 }
 @keyframes inter{
   0%{
-
-    transform: rotate(90deg) translateX(40px);
-  }
-  50%{
     transform: rotate(90deg) translateX(-40px);
   }
-  100%{
+  50%{
     transform: rotate(90deg) translateX(40px);
+  }
+  100%{
+    transform: rotate(90deg) translateX(-40px);
   }
 }
 @keyframes cursor{
@@ -154,6 +157,8 @@
 @media  screen and (min-width: 660px){
     .container-social-media{
         list-style: none;
+        position: absolute;
+        left: max(20px, calc(50% - 550px));
     }
     .social-item{
         list-style: none;

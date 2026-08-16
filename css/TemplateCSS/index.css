@@ -53,6 +53,9 @@ body{
     background-color: var(--color-background-four);
     color:var(--color-background-three);
 }
+body, input, button, textarea, select, a {
+    font-family: 'Courier New', Courier, monospace;
+}
 
 .container{
    padding-top: 4rem;

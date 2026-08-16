@@ -98,9 +98,10 @@
 .inactive-proyect{
   display: none;
 }
-.active-button-filter{
-    background: var(--color-background-three);
-    color: var(--color-background-five);
+.active-button-filter,
+.active-button-filter:hover {
+    background-color: var(--color-background-three);
+    color: var(--color-background-cero);
     z-index: 2;
 }
 .card-proyect__svg-icon i{

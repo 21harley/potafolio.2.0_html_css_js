@@ -39,7 +39,10 @@ export default function createMandala() {
       ' + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +',
       '/////////////////////////////////////////////////////////////////////'
   ];
-  const radii = [110, 150, 190];
+  let radii = [130, 170, 210]; // Mobile default
+  if (window.innerWidth > 660) {
+      radii = [300, 385, 470]; // PC larger radii
+  }
 
   patterns.forEach((pattern, index) => {
       for (let i = 0; i < 4; i++) {

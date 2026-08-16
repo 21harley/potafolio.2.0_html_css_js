@@ -6,7 +6,8 @@
     color: var(--color-background-three);
     text-decoration: none;
     width: 40%;
-    margin: 0px auto auto auto;
+    max-width: 300px;
+    margin: 2rem auto;
     padding: 15px;
     border-radius: 8px;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -20,10 +21,13 @@
 }
 .container-about-me{
     position: relative;
-   display: flex;
-   flex-direction: column;
-   background-color: var(--color-background-cero);
-   z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-background-cero);
+    z-index: 2;
+    padding-bottom: 2rem;
 }
 .container-img-about-me{
     display: grid;
@@ -33,7 +37,7 @@
 .img-about-me{
   position: relative;
   width: 230px;
-  top:20px;
+  margin-top: 20px;
   border-radius: 50%;
   transition: transform 0.5s ease;
 }
@@ -47,9 +51,10 @@
    font-size: 1.2rem;
 }
 @media  screen and (min-width: 0px) and (max-width:660px ){
-
     .container-img-about-me{
-        height: 34%;
+        height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         width: 100%;
         display: grid;
         place-items: center;
@@ -69,7 +74,7 @@
 
 @media  screen and (min-width: 600px){
     .link-cv-download{
-        margin-top: 100px;
+        margin-top: 2rem;
     }
     .container-about-me__p{
       max-width: 600px;

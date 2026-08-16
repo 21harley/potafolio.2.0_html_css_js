@@ -36,5 +36,7 @@
 @media  screen and (min-width: 660px){
     .container-social-media-footer{
         width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
