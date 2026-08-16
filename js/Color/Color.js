@@ -1,5 +1,5 @@
 let colorName=["--color-background-cero","--color-background-one","--color-background-two","--color-background-three","--color-background-four","--color-background-five"];
-let colorVar=[["#0d1117","#161b22","#21262d","#f0f6fc","#8b949e","#30363d"],
+let colorVar=[["#0f1014","#1b1d25","#444856","#dfe3ff","#929ab1","#2c303a"],
 ["#ffffff","#f6f8fa","#f6f8fa","#24292f","#586069","#d0d7de"]];
 
 export default function Color(){

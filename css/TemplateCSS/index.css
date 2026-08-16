@@ -1,10 +1,10 @@
 :root{
-    --color-background-cero:#0d1117;
-    --color-background-one:#161b22;
-    --color-background-two:#21262d;
-    --color-background-three:#f0f6fc;
-    --color-background-four:#8b949e;
-    --color-background-five:#30363d;
+    --color-background-cero:#0f1014;
+    --color-background-one:#1b1d25;
+    --color-background-two:#444856;
+    --color-background-three:#dfe3ff;
+    --color-background-four:#929ab1;
+    --color-background-five:#2c303a;
 /*
  let colorVar=[["#130B28","#58585847","#51515136","#DCDBD9","#33333339","#000000"],
     --color-background-cero:rgb(216, 214, 220); 
@@ -43,6 +43,10 @@ background-color: var(--color-background-three);
 scroll-behavior: smooth;
 overflow-y: scroll;
 transition: all 0.5s;
+box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 body{
     width: 100%;

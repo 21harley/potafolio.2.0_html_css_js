@@ -92,6 +92,25 @@
     #restart-btn:hover {
         background-color: rgba(192, 57, 43, 1);
     }
+
+    #repo-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        z-index: 10;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+    #repo-btn:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
 </style>
 </head>
 
@@ -105,6 +124,7 @@
             <button id="start-btn">Activar Sonido y Jugar</button>
         </div>
 
+        <a id="repo-btn" href="https://github.com/21harley/Mr_Do_Raylib_WebAssembly" target="_blank" title="Ver Repositorio">Repo: Mr Do</a>
         <button id="restart-btn" title="Reiniciar Juego">↻ Reiniciar</button>
 
         <!-- Paso 03: Contenedor HTML5 -->

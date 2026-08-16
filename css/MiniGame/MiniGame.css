@@ -1,3 +1,39 @@
 .container-miniGame{
     background-color: var(--color-background-cero);
+    padding-bottom: 2rem;
+}
+
+.minigame-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.05);
+    color: var(--color-background-three);
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    backdrop-filter: blur(5px);
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.minigame-btn:hover {
+    background-color: rgba(255,255,255,0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.active-minigame-btn {
+    background-color: var(--color-background-three);
+    color: var(--color-background-cero);
+    border: 1px solid var(--color-background-three);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.active-minigame-btn:hover {
+    background-color: var(--color-background-four);
+    border-color: var(--color-background-four);
+    transform: translateY(-3px);
 }

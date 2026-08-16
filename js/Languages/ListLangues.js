@@ -18,29 +18,29 @@ const english={
         'Repository',
         'Page',
         /*proyects*/
-        'Heads or Tails React Sass',
-        'Heads or tails game project using React, sass and BEM.',
+        'Store Manager FakeStoreAPI',
+        'E-commerce store manager using React, TypeScript, and FakeStoreAPI.',
 
-        'js calculator',
-        'Calculator creation project in js.',
+        'Technical Test Personal Page',
+        'Personal page project developed as a technical test using TypeScript.',
 
-        'San Cristobal route system',
-        'San Cristóbal route management system with html, css, js, php and sql.',
+        'ToDo Laravel Vue (Technical Test)',
+        'Technical test presentation using PHP Laravel and Vue.js.',
 
-        'SPA test',
-        'Try SPA using responsive and css.',
+        'Census Project Laravel',
+        'Disease census project developed using the Laravel framework.',
 
-        'Express-pug project',
-        'Reminder notes project in html,css,js,pug,nodejs, express and mysql.',
+        'PostgreSQL Java Workshop',
+        'Program that manages a PostgreSQL database with a Java interface.',
 
-        'PostgreSQLJava Workshop',
-        'Program that manages a database with PostgreSQL and shows it with an interface made in java.',
+        'CRUD Fragment Android',
+        'Android application implementing CRUD operations with Fragments in Kotlin.',
 
-        'Course of computer pills php.',
-        'php classes, database connection, pagination, mail, login, personal pad and MVC.',
+        'San Cristobal Route System',
+        'San Cristóbal route management system with HTML, CSS, JS, PHP and SQL.',
 
-        'Sokoban in c',
-        'Sokoban in c using structures, steps by references and files',
+        'Sokoban in C',
+        'Sokoban in C using structures, steps by references and files.',
 
         'In construction...'
 
@@ -66,33 +66,33 @@ const spanish={
         'Repositorio',
         'Pagina',
          /*proyectos*/
-        'Cara o Cruz React Sass',
-        'Proyecto de juego cara o cruz usando React, sass y BEM.',
+        'Store Manager FakeStoreAPI',
+        'Gestor de tienda de comercio electrónico utilizando React, TypeScript y FakeStoreAPI.',
 
-        'Calculadora Js',
-        'Proyecto de creación de calculadora en js.',
+        'Prueba Técnica Página Personal',
+        'Proyecto de página personal desarrollado como prueba técnica utilizando TypeScript.',
 
-        'Sistema ruta San Cristóbal',
-        'Sistema de gestión de rutas de San Cristóbal con html,css,js,php y sql.',
+        'ToDo Laravel Vue (Prueba Técnica)',
+        'Presentación de prueba técnica utilizando PHP Laravel y Vue.js.',
 
-        'Prueba SPA.',
-        'Prueba SPA uso de responsiva y css.',
+        'Proyecto Censo Laravel',
+        'Proyecto de censo sobre enfermedades desarrollado usando el framework Laravel.',
 
-        'Proyecto Express-pug',
-        'Proyecto de notas de recordatorio en html,css,js,pug,nodejs, express y mysql.',
+        'Taller PostgreSQL Java',
+        'Programa que gestiona una base de datos con PostgreSQL y lo muestra con una interfaz en Java.',
 
-        'Taller PostgreSQL java',
-        'Programa que gestiona una base de datos con PostgreSQL y lo muestra con una interfaz hecha en java.',
+        'CRUD Fragment Android',
+        'Aplicación para Android implementando operaciones CRUD con Fragments en Kotlin.',
 
-        'Curso de píldoras informáticas php.',
-        'Clases de php, conexión a base de datos, paginación, correo, login, bloc personal y MVC.',
+        'Sistema Ruta San Cristóbal',
+        'Sistema de gestión de rutas de San Cristóbal con HTML, CSS, JS, PHP y SQL.',
 
-        'Sokoban en c',
+        'Sokoban en C',
         'Sokoban en C utilizando estructuras, pasos por referencias y archivos.',
         
         /*otros*/
 
-        'En construcción...',
+        'En construcción...'
     ]
 }
 
