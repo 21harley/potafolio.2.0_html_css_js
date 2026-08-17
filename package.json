@@ -1,0 +1,9 @@
+{
+  "name": "potafolio-john-llanes",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Portafolio personal de John Llanes",
+  "engines": {
+    "node": ">=20.x"
+  }
+}
