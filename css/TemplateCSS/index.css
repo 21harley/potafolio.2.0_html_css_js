@@ -59,19 +59,27 @@ body, input, button, textarea, select, a {
 
 .container{
    padding-top: 4rem;
+   padding-bottom: 3rem;
    width: 100%;
+   max-width: 1200px;
    height: auto;
-   min-height: 100vh;
+   min-height: auto;
    margin-left: auto;
    margin-right: auto;
-   /*
-   width: 100%;
-   max-width: var(--container-width);
-   min-height: 100vh;
-   height: 100vh;
-   */
    text-align: center;
    border-bottom: var(--color-background-one) solid 1px;
+   box-sizing: border-box;
+}
+
+@media screen and (min-width: 992px) {
+   .container:not(.container-home) {
+       min-height: 550px;
+       max-height: 750px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
 }
 
 .InConstruction{
